@@ -1,4 +1,6 @@
 # ST27C322 EPROM Programmer
+
+![Build Rev-1a](./docs/prototype-debugging-1.jfif)
   
 This schematic is for an EPROM programmer that I put together to allow me to build a switchable Amiga Kickstart.  The plan is to put DiagROM and Kickstarts v1.3, v2.4, and v3.1.1 on a single EPROM. It uses a boost converter to generate the programming voltage _VPP_ so it can be run from USB only. It uses [MCP23017](./docs/MCP23017-datasheet.pdf) IO extenders to generate enough Address and Data lines. The Data lines are driven by the io extender at ```0x20``` while the high data lines are driven by the io extender at ```0x24```.
 
